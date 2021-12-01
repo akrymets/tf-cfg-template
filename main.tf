@@ -1,6 +1,6 @@
 # You take a template file and pass variables values into it
 data "template_file" "config" {
-  template = "templates/my_config.json"
+  template = "templates/my_config.json.tmpl"
 
   vars = {
     hostname = aws_instance.db_instance.private_dns
